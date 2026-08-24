@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Omni Graphix</title>
+
+    <meta name="description"
+          content="Complete your order with Omni Graphix. Select your package, enter your billing information, and submit your creative project request securely.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Styles -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- =============================
+        HEADER
+============================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <h2>
+
+                <span>Omni</span> Graphix
+
+            </h2>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="pricing.html">Pricing</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+            <li>
+
+                <a href="checkout.html"
+                   class="btn-nav active">
+
+                    Checkout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="menu-btn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =============================
+        HERO
+============================= -->
+
+<section class="hero checkout-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="hero-text">
+
+            <span class="small-title">
+
+                SECURE CHECKOUT
+
+            </span>
+
+            <h1>
+
+                Complete Your
+                <span>Order</span>
+
+            </h1>
+
+            <p>
+
+                Fill in your billing information below,
+                choose your preferred package,
+                and we'll begin working on your project
+                after confirming your order.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =============================
+        CHECKOUT FORM
+============================= -->
+
+<section class="checkout-section">
+
+    <div class="container">
+
+        <div class="checkout-grid">
+
+            <!-- Billing Form -->
+
+            <div class="checkout-form">
+
+                <div class="section-title text-left">
+
+                    <span>Billing Details</span>
+
+                    <h2>
+
+                        Customer Information
+
+                    </h2>
+
+                    <p>
+
+                        Please complete your details accurately
+                        to help us process your order.
+
+                    </p>
+
+                </div>
+
+                <form id="checkoutForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+
+                                First Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="John"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+
+                                Last Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Doe"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+
+                                Email Address
+
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="phone">
+
+                                Phone Number
+
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+234 XXX XXX XXXX"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="company">
+
+                            Company Name
+                            <small>(Optional)</small>
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            placeholder="Your Business Name">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="address">
+
+                            Address
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Street Address"
+                            required>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+
+                                City
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="City"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="state">
+
+                                State
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                placeholder="State"
+                                required>
+
+                        </div>
+
+                    </div>
+<div class="form-group">
+
+                        <label for="country">
+
+                            Country
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="country"
+                            name="country"
+                            value="Nigeria"
+                            required>
+
+                    </div>
+
+                    <!-- =============================
+                            PACKAGE SELECTION
+                    ============================== -->
+
+                    <div class="section-title text-left">
+
+                        <span>Choose a Package</span>
+
+                        <h2>Service Selection</h2>
+
+                    </div>
+
+                    <div class="package-options">
+
+                        <label class="package-option">
+
+                            <input type="radio"
+                                   name="package"
+                                   value="Starter"
+                                   checked>
+
+                            <span class="package-card">
+
+                                <strong>Starter</strong>
+
+                                <small>
+                                    Logo Design + Business Card
+                                </small>
+
+                                <h3>₦25,000</h3>
+
+                            </span>
+
+                        </label>
+
+                        <label class="package-option">
+
+                            <input type="radio"
+                                   name="package"
+                                   value="Business">
+
+                            <span class="package-card">
+
+                                <strong>Business</strong>
+
+                                <small>
+                                    Complete Brand Identity
+                                </small>
+
+                                <h3>₦75,000</h3>
+
+                            </span>
+
+                        </label>
+
+                        <label class="package-option">
+
+                            <input type="radio"
+                                   name="package"
+                                   value="Enterprise">
+
+                            <span class="package-card">
+
+                                <strong>Enterprise</strong>
+
+                                <small>
+                                    Custom Business Solution
+                                </small>
+
+                                <h3>Custom Quote</h3>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="projectNotes">
+
+                            Project Notes
+
+                        </label>
+
+                        <textarea
+                            id="projectNotes"
+                            name="projectNotes"
+                            rows="6"
+                            placeholder="Tell us about your project requirements..."></textarea>
+
+                    </div>
+
+                    <!-- =============================
+                            PAYMENT
+                    ============================== -->
+
+                    <div class="section-title text-left">
+
+                        <span>Payment Method</span>
+
+                        <h2>Choose Payment Option</h2>
+
+                    </div>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+
+                            <input type="radio"
+                                   name="payment"
+                                   value="Bank Transfer"
+                                   checked>
+
+                            <span>
+
+                                <i class="fas fa-university"></i>
+
+                                Bank Transfer
+
+                            </span>
+
+                        </label>
+
+                        <label class="payment-option">
+
+                            <input type="radio"
+                                   name="payment"
+                                   value="Card">
+
+                            <span>
+
+                                <i class="far fa-credit-card"></i>
+
+                                Debit / Credit Card
+
+                            </span>
+
+                        </label>
+
+                        <label class="payment-option">
+
+                            <input type="radio"
+                                   name="payment"
+                                   value="Pay on Approval">
+
+                            <span>
+
+                                <i class="fas fa-wallet"></i>
+
+                                Pay After Approval
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <!-- =============================
+                            PROMO CODE
+                    ============================== -->
+
+                    <div class="form-group">
+
+                        <label for="promo">
+
+                            Promo Code
+
+                        </label>
+
+                        <div class="promo-box">
+
+                            <input
+                                type="text"
+                                id="promo"
+                                placeholder="Enter Promo Code">
+
+                            <button
+                                type="button"
+                                class="secondary-btn">
+
+                                Apply
+
+                            </button>
+
+                        </div>
+
+                    </div>
+<!-- =============================
+                            TERMS & PLACE ORDER
+                    ============================== -->
+
+                    <div class="form-group checkbox-group">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                required>
+
+                            I have read and agree to the
+                            <a href="#">Terms & Conditions</a>
+                            and
+                            <a href="#">Privacy Policy</a>.
+
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        <i class="fas fa-lock"></i>
+
+                        Place Order
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- =============================
+                    ORDER SUMMARY
+            ============================== -->
+
+            <aside class="checkout-summary">
+
+                <div class="summary-card">
+
+                    <h3>
+
+                        Order Summary
+
+                    </h3>
+
+                    <hr>
+
+                    <div class="summary-item">
+
+                        <span>Selected Package</span>
+
+                        <strong>Business Package</strong>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Brand Identity</span>
+
+                        <span>Included</span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Business Stationery</span>
+
+                        <span>Included</span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Social Media Kit</span>
+
+                        <span>Included</span>
+
+                    </div>
+
+                    <div class="summary-item">
+
+                        <span>Estimated Delivery</span>
+
+                        <span>5–7 Business Days</span>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-total">
+
+                        <span>Total :</span>
+
+                        <strong>Custom</strong>
+
+                    </div>
+
+                    <div class="secure-payment">
+
+                        <p>
+
+                            <i class="fas fa-shield-alt"></i>
+
+                            Your order information is handled securely.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =============================
+        ORDER SUCCESS MESSAGE
+============================= -->
+
+<section class="success-message"
+         id="orderSuccess"
+         style="display:none;">
+
+    <div class="container">
+
+        <div class="service-card success-card">
+
+            <div class="service-icon">
+
+                <i class="fas fa-circle-check"></i>
+
+            </div>
+
+            <h2>
+
+                Thank You!
+
+            </h2>
+
+            <p>
+
+                Your order has been submitted successfully.
+                Our team will review your request and contact
+                you shortly with the next steps.
+
+            </p>
+
+            <a href="index.html"
+               class="primary-btn">
+
+                Return Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =============================
+        FOOTER
+============================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>
+
+                    <span>Omni</span> Graphix
+
+                </h3>
+
+                <p>
+
+                    Professional branding,
+                    graphic design,
+                    commercial printing,
+                    and digital marketing
+                    solutions for businesses
+                    of every size.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Quick Links
+
+                </h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Services
+
+                </h4>
+
+                <ul>
+
+                    <li>Graphic Design</li>
+
+                    <li>Brand Identity</li>
+
+                    <li>Commercial Printing</li>
+
+                    <li>Packaging Design</li>
+
+                    <li>Digital Marketing</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Contact
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fas fa-location-dot"></i>
+
+                        Ibadan, Nigeria
+
+                    </li>
+
+                    <li>
+
+                        <i class="fas fa-phone"></i>
+
+                        +234 815 230 7176
+
+                    </li>
+
+                    <li>
+
+                        <i class="fas fa-envelope"></i>
+
+                        iomoteleola@gmail.com
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="year"></span>
+                Omni Graphix.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =============================
+        BACK TO TOP
+============================= -->
+
+<button id="backToTop"
+        title="Back to Top">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- =============================
+        JAVASCRIPT
+============================= -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
